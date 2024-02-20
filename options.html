@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head><title>Options</title>
+<!--  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">-->
+    <link rel="stylesheet" href="material.min.css">
+  <style>
+body{font-family: 'calibri'; font-size:0.9em; }
+button{border:1px solid #ccc; padding:10px;}
+label{display:block;}
+h4{font-weight:100; color:#ccc}      
+.form-group{margin:10px 0;}
+input,select{padding:4px; border-radius: 3px;}
+label{margin:34px 0 0; font-weight:100;font-size: 1.1em; color: #fff;line-height: 1.2em}
+  </style>
+    <script type="text/javascript" src="jquery-1.11.3.min.js"></script>
+
+<script type="text/javascript" src="options.js"></script>
+</head>
+
+<body style="min-width:800px" >
+<h2 style=" padding:0 10px; background:#ccc; margin:0;background: rgba(248,80,50,1); background: -moz-linear-gradient(left, rgba(248,80,50,1) 0%, rgba(240,93,93,1) 14%, rgba(245,198,12,1) 32%, rgba(24,226,240,1) 51%, rgba(12,245,47,1) 69%, rgba(233,12,245,1) 86%, rgba(231,56,39,1) 100%); background: -webkit-gradient(left top, right top, color-stop(0%, rgba(248,80,50,1)), color-stop(14%, rgba(240,93,93,1)), color-stop(32%, rgba(245,198,12,1)), color-stop(51%, rgba(24,226,240,1)), color-stop(69%, rgba(12,245,47,1)), color-stop(86%, rgba(233,12,245,1)), color-stop(100%, rgba(231,56,39,1))); background: -webkit-linear-gradient(left, rgba(248,80,50,1) 0%, rgba(240,93,93,1) 14%, rgba(245,198,12,1) 32%, rgba(24,226,240,1) 51%, rgba(12,245,47,1) 69%, rgba(233,12,245,1) 86%, rgba(231,56,39,1) 100%); background: -o-linear-gradient(left, rgba(248,80,50,1) 0%, rgba(240,93,93,1) 14%, rgba(245,198,12,1) 32%, rgba(24,226,240,1) 51%, rgba(12,245,47,1) 69%, rgba(233,12,245,1) 86%, rgba(231,56,39,1) 100%); background: -ms-linear-gradient(left, rgba(248,80,50,1) 0%, rgba(240,93,93,1) 14%, rgba(245,198,12,1) 32%, rgba(24,226,240,1) 51%, rgba(12,245,47,1) 69%, rgba(233,12,245,1) 86%, rgba(231,56,39,1) 100%); background: linear-gradient(to right, rgba(248,80,50,1) 0%, rgba(240,93,93,1) 14%, rgba(245,198,12,1) 32%, rgba(24,226,240,1) 51%, rgba(12,245,47,1) 69%, rgba(233,12,245,1) 86%, rgba(231,56,39,1) 100%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f85032', endColorstr='#e73827', GradientType=1 );">DINKAR</h2>
+<div class="row">
+ <div class="col s3" style="height:100vh; color:#fff; background:#000">
+<h4 style="border-bottom:1px solid #404040; padding:0 0 10px"> Options</h4>
+<div class="form-group">
+<label>Choose background Colors and save it to palette</label>
+<input type="color" id="colorwheel1">
+<input type="color" id="colorwheel2"><a href="" id="fav" style="position: relative; top: 10px; right: -5px;"><i class="material-icons dp48">Save theme</i></a>
+</div>
+
+<div class="form-group">
+  <input type="text" id="name" placeholder="Type your name" >
+</div>
+<div id="status"></div>
+<div class="form-group">
+  <input type="text" id="flkr" placeholder="Type category" >
+</div>
+<input type="button" id="save" onclick="save()" class="waves-effect waves-light btn" value="Save" />
+</div>
+        <div class="col s9" style="background:#1f1c1c;color:#fff; height:100vh;">
+<h4 style="border-bottom:1px solid #404040; padding:0 0 10px"> Color Palette</h4>
+<div id="pallette"></div>
+        </div>
+        </div>
+</body>
+</html>

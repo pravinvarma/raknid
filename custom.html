@@ -1,0 +1,81 @@
+<link rel="stylesheet" href="material.min.css">
+
+<body id="bodyId" ng-app="ChromeApp">
+    <div id="cover"></div>
+    <style>
+        .note {
+            background: #ccc;
+            padding: 10px;
+            position: relative;
+            margin: 1px 0 0 0;
+            opacity: 0.5;
+        }
+        
+        #cover {
+            background-repeat: no-repeat;
+            width: 100%;
+            background-size: cover;
+            height: 100vh;
+            position: fixed;
+            z-index: -1;
+            filter: blur(9px);
+            left: -7px;
+            opacity: 0.6;
+            top: -4px;
+        }
+    </style>
+    <h2 style="text-align:left;color:#fff ; display:inline-flex; padding-right:10px;border-right:1px solid #fff;font-weight:100">Hi<span id="name" style="padding:0 0 0 10px"></span></h2>
+    <h3 id="txt" style="font-size:4em; padding-left:10px;text-align:right;color:#fff;display:inline-flex; font-weight:100"></h3>
+    <h2 style="font-size:4em; padding-left:10px;text-align:right;color:#fff;display:inline-flex; float:right"><div style="text-align:center"><div style="border-bottom:1px solid;padding: 0 0 10px;"><span id="battery" ></span><span style="color:#fff; ">%</span></div><div id="status" style="font-size:0.3em;margin: 0;padding: 0;line-height: 35px; "></div></div>
+    
+    </h2>
+    <style>
+        body {
+            /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#b6e026+0,abdc28+100;Green+Flat */
+            padding: 20px
+        }
+        
+        h1,
+        h2 {
+            font-weight: 100;
+        }
+        
+        .close-icon {
+            background: url('close-icon.png');
+            width: 12px;
+            height: 12px;
+            display: inline-block;
+            margin: 0 0 0 19px;
+            cursor: pointer;
+            position: absolute;
+            right: 9px;
+            top:10px
+        }
+    </style>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script type="text/javascript" src="jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="Chart.js"></script>
+    <script src="one.js"></script>
+    <script src="background.js"></script>
+    <script src="options.js"></script>
+    <!-- <div class="chip">
+    Tag
+    <i class="material-icons">close</i>
+  </div>-->
+    <div>
+        <div class="row">
+            <div style="margin:100px auto 0; width:50%">
+                <div class="input-field col s12">
+                    <input type="text" class="validate" style="color:white" id="rememberInput" placeholder="Type something to remember..">
+                </div>
+                <p id="error" style="color:red"></p>
+                <a class="waves-effect waves-light btn" id="add">Submit</a>
+            </div>
+        </div>
+        <div style="margin:0 auto; width:50%;max-height: 200px;overflow-y: auto;">
+            <div id="chip">
+            </div>
+        </div>
+        <a href="javascript:void(0)" id="optionsId" class="btn-floating btn-large waves-effect waves-light red" style="position:absolute;bottom:20px;right:20px"><i ><img src=settings.png width="54px" height="54px"/></i></a>
+        <small id="author" style="position:absolute; bottom:0px; left:0px; color:#fff; opacity:0.6; font-size:12px;"></small>
+</body>
